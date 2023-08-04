@@ -16,15 +16,17 @@ typedef struct woman_t
 bool existSingle(man_t **M, int length);
 bool preferMeToPartner(woman_t *w, man_t *m, man_t **prefs);
 
-int main()
+int main(int argc, char *argv[])
 {
     int n;
     man_t *M[N], *menPrefs[N][N];
     woman_t *W[N], *womenPrefs[N][N];
     int proposedRank[N];
     FILE *file;
+    char *file_name;
 
-    file = fopen("input", "r");
+    file_name = argc == 1 ? "input" : argv[1];
+    file = fopen(file_name, "r");
     fscanf(file, "%d", &n);
     printf("n = %d\n", n);
     if (n > N)
