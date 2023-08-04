@@ -2,25 +2,25 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #define N 100
-typedef struct man
+typedef struct man_t
 {
     int name;
-    struct woman *partner;
-} man;
-typedef struct woman
+    struct woman_t *partner;
+} man_t;
+typedef struct woman_t
 {
     int name;
-    struct man *partner;
-} woman;
+    struct man_t *partner;
+} woman_t;
 
-bool existSingle(man **M, int length);
-bool preferMeToPartner(woman *w, man *m, man **prefs);
+bool existSingle(man_t **M, int length);
+bool preferMeToPartner(woman_t *w, man_t *m, man_t **prefs);
 
 int main()
 {
     int n;
-    man *M[N], *menPrefs[N][N];
-    woman *W[N], *womenPrefs[N][N];
+    man_t *M[N], *menPrefs[N][N];
+    woman_t *W[N], *womenPrefs[N][N];
     int proposedRank[N];
     FILE *file;
 
@@ -35,13 +35,13 @@ int main()
     // 初期化
     for (int i = 0; i < n; i++)
     {
-        man *m;
-        woman *w;
-        m = (struct man *)malloc(sizeof(man));
+        man_t *m;
+        woman_t *w;
+        m = (struct man_t *)malloc(sizeof(man_t));
         m->name = i;
         m->partner = NULL;
         M[i] = m;
-        w = (struct woman *)malloc(sizeof(woman));
+        w = (struct woman_t *)malloc(sizeof(woman_t));
         w->name = i;
         w->partner = NULL;
         W[i] = w;
@@ -83,8 +83,8 @@ int main()
     {
         for (int i = 0; i < n; i++)
         {
-            man *m = M[i];
-            woman *w = womenPrefs[i][proposedRank[i]];
+            man_t *m = M[i];
+            woman_t *w = womenPrefs[i][proposedRank[i]];
             // mは婚約済み
             if (m->partner != NULL)
                 continue;
@@ -121,7 +121,7 @@ int main()
     return 0;
 }
 
-bool existSingle(man **M, int length)
+bool existSingle(man_t **M, int length)
 {
     for (int i = 0; i < length; i++)
     {
@@ -131,7 +131,7 @@ bool existSingle(man **M, int length)
     return false;
 }
 
-bool preferMeToPartner(woman *w, man *m, man **prefs)
+bool preferMeToPartner(woman_t *w, man_t *m, man_t **prefs)
 {
     if (w->partner == NULL)
         return true;
