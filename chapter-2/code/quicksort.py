@@ -8,29 +8,29 @@ import time
 import typing as t
 
 
-def quick_sort(a: list[int]) -> list[int]:
+def quicksort(a: list[int]) -> list[int]:
     '''
     Returns a sorted array.
 
-    >>> quick_sort([2, 1, 5, 4, 3])
+    >>> quicksort([2, 1, 5, 4, 3])
     [1, 2, 3, 4, 5]
-    >>> quick_sort([5, 4, 3, 2, 1])
+    >>> quicksort([5, 4, 3, 2, 1])
     [1, 2, 3, 4, 5]
-    >>> quick_sort([1, 2, 3, 4, 5])
+    >>> quicksort([1, 2, 3, 4, 5])
     [1, 2, 3, 4, 5]
     '''
 
     if len(a) <= 1:
         return list(a)
-    return (quick_sort([lt for lt in a[1:] if lt < a[0]]) + a[0:1] +
-            quick_sort([ge for ge in a[1:] if ge >= a[0]]))
+    return (quicksort([lt for lt in a[1:] if lt < a[0]]) + a[0:1] +
+            quicksort([ge for ge in a[1:] if ge >= a[0]]))
 
 
 def timeit(func: t.Callable[..., t.Any], *args: t.Any,
            **kwargs: t.Any) -> None:
     '''Prints the execution time of a function.'''
 
-    print('  input :', reprlib.repr(*args))
+    print('  input :', reprlib.repr(*args, **kwargs))
     start_time = time.perf_counter()
     out = func(*args, **kwargs)
     print('  output:', reprlib.repr(out))
@@ -54,15 +54,15 @@ def main() -> None:
 
     print(f'\n** Random Case 1 ({N=}) **')
     random.shuffle(a)
-    timeit(quick_sort, a)
+    timeit(quicksort, a)
 
     print(f'\n** Random Case 2 ({N=}) **')
     random.shuffle(a)
-    timeit(quick_sort, a)
+    timeit(quicksort, a)
 
     print(f'\n** Worst Case ({N=}) **')
     a.sort()
-    timeit(quick_sort, a)
+    timeit(quicksort, a)
 
     print('\nTask Completed\n')
 
