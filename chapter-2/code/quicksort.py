@@ -45,7 +45,7 @@ def main() -> None:
 
     sys.setrecursionlimit(10**7)
 
-    print('Comparison of Quick Sort Speed Based on Different Instances')
+    print('Comparison of QuickSort Speed Based on Different Instances')
 
     input('> Press enter to continue ...')
 
