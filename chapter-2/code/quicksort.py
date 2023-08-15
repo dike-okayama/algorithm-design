@@ -64,6 +64,10 @@ def main() -> None:
     a.sort()
     timeit(quicksort, a)
 
+    print(f'\n** Worst Case ({N=}) (reversed) **')
+    a.sort(reverse=True)
+    timeit(quicksort, a)
+
     print('\nTask Completed\n')
 
 
