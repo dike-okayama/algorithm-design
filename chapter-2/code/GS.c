@@ -5,7 +5,6 @@ struct node
 {
     int val;
     struct node *next;
-    struct node *prev;
 };
 
 struct node *insert(int val, struct node *first);
@@ -117,9 +116,6 @@ struct node *insert(int val, struct node *first)
     struct node *new_node = (struct node *)malloc(sizeof(struct node));
     new_node->val = val;
     new_node->next = first;
-    new_node->prev = NULL;
-    if (first != NULL)
-        first->prev = new_node;
 
     return new_node;
 }
@@ -131,8 +127,6 @@ struct node *delete_head(struct node *first)
 
     struct node *temp = first->next;
     free(first);
-    if (temp != NULL)
-        temp->prev = NULL;
 
     return temp;
 }
