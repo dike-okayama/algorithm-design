@@ -26,4 +26,5 @@
 | 第2回 | 8/12 | [1.2 五つの代表的な問題](https://github.com/dike-okayama/algorithm-design/blob/main/chapter-1/1.2.md) | [shunsukehamada](https://github.com/shunsukehamada) |
 | 第3回 | 8/15 | [2.1 計算容易性](https://github.com/dike-okayama/algorithm-design/blob/main/chapter-2/2.1.md)<br>[2.2 増加の漸近的オーダー（p38,漸近的増加率の性質まで）](https://github.com/dike-okayama/algorithm-design/blob/main/chapter-2/2.2.md) | [dike-okayama](https://github.com/dike-okayama) |
 | 第4回 | 8/20 | [2.2 増加の漸近的オーダー（p39,基本的な関数の漸近的限界から）](https://github.com/dike-okayama/algorithm-design/blob/main/chapter-2/2.2.md)<br>[2.3 リストと配列による安定マッチングアルゴリズムの実装](https://github.com/dike-okayama/algorithm-design/blob/main/chapter-2/2.3.md) | [shunsukehamada](https://github.com/shunsukehamada) |
-| 第5回 | 8/26（予定） | 2.4 よく現れる計算時間の復習 | [dike-okayama](https://github.com/dike-okayama) |
+| 第5回 | 8/26 | [2.4 よく現れる計算時間の復習](https://github.com/dike-okayama/algorithm-design/blob/main/chapter-2/2.4.md) | [dike-okayama](https://github.com/dike-okayama) |
+| 第6回 | 8/30（予定） | 2.5 よく現れる計算時間の復習 | [shunsukehamada](https://github.com/shunsukehamada) |
