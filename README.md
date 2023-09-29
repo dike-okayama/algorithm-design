@@ -29,3 +29,5 @@
 | 第5回 | 8/26 | [2.4 よく現れる計算時間の復習](https://github.com/dike-okayama/algorithm-design/blob/main/chapter-2/2.4.md) | [dike-okayama](https://github.com/dike-okayama) |
 | 第6回 | 8/30 | [2.5 より複雑なデータ構造：優先順位付きキュー](https://github.com/dike-okayama/algorithm-design/blob/main/chapter-2/2.5.md) | [shunsukehamada](https://github.com/shunsukehamada) |
 | 第7回 | 9/9 | [3.1 基本的定義と応用](https://github.com/dike-okayama/algorithm-design/blob/main/chapter-3/3.1.md) | [dike-okayama](https://github.com/dike-okayama) |
+| 第8回 | 9/16 | [3.2 グラフの連結性とグラフ走査](https://github.com/dike-okayama/algorithm-design/blob/main/chapter-3/3.2.md) | [shunsukehamada](https://github.com/shunsukehamada) |
+| 第9回 | 9/30 | [3.3 キューとスタックを用いたグラフ走査](https://github.com/dike-okayama/algorithm-design/blob/main/chapter-3/3.3.md) | [dike-okayama](https://github.com/dike-okayama) |
