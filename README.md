@@ -33,3 +33,4 @@
 | 第9回 | 9/30 | [3.3 キューとスタックを用いたグラフ走査](./chapter-3/3.3.md) | [okayama-daiki](https://github.com/okayama-daiki) |
 | 第10回 | 10/7 | [3.4 二部グラフ性の判定：幅優先探索の応用](./chapter-3/3.4.md) | [shunsukehamada](https://github.com/shunsukehamada) |
 | 第11回 | 11/17 | [3.5 有向グラフの連結性](./chapter-3/3.5.md) | [shunsukehamada](https://github.com/shunsukehamada) |
+| 第12回 | 11/25 | [3.6 有向無閉路グラフとトポロジカル順序付け](./chapter-3/3.6.md) | [okayama-daiki](https://github.com/okayama-daiki) |
