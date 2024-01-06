@@ -35,3 +35,4 @@
 | 第11回 | 11/17 | [3.5 有向グラフの連結性](./chapter-3/3.5.md) | [hamao0820](https://github.com/hamao0820) |
 | 第12回 | 11/25 | [3.6 有向無閉路グラフとトポロジカル順序付け](./chapter-3/3.6.md) | [okayama-daiki](https://github.com/okayama-daiki) |
 | 第13回 | 12/3 | [4.1 区間スケジューリング：グリーディアルゴリズムの先進性](./chapter-4/4.1.md) | [hamao0820](https://github.com/hamao0820) |
+| 第14回| 1/6 | [4.2 遅延最小化スケジュール：交換議論](./chapter-4/4.2.md) | [okayama-daiki](https://github.com/okayama-daiki) |
